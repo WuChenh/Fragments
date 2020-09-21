@@ -14,9 +14,8 @@ for lnk in matchimglnk:
     url = 'https://cn.bing.com/' + lnk
     print(url)
     pic = requests.get(url)
-    picpath = r'C:\Users\CHANH\Downloads\%s' % (filename)
+    picpath = r'C:\Users\username\Downloads\%s' % (filename)
     with open(picpath,'wb') as f:
         f.write(pic.content)
     f.close()
     print ('Successfully downloaded in ',picpath)
-    #open(r'C:\Users\CHANH\Downloads\%s' %(filename),'wb').write(pic.content)
